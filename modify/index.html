@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zack Hotel Online Booking</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+
+<body class="z-light-grey">
+
+    <!-- Nav Bar -->
+    <div class="z-bar z-white z-large">
+        <a href="#" class="z-bar-item z-button z-red z-mobile"><i class="fas fa-bed z-margin-right"></i>Zack Hotel</a>
+        <a href="#" class="z-bar-item z-button z-mobile">Rooms</a>
+        <a href="#" class="z-bar-item z-button z-mobile">About</a>
+        <a href="#" class="z-bar-item z-button z-mobile">Contact</a>
+        <a href="#" class="z-bar-item z-button z-right z-light-grey z-mobile">Book Now</a>
+    </div>
+
+    <!-- Header -->
+    <header class="z-display-container z-content" style="max-width:1500px;">
+        <img class="z-image" src="image/hotel.jpg" alt="The Hotel" style="min-width:1000px" width="1500" height="800">
+        <div class="z-display-left z-padding z-col l6 m8">
+            <div class="z-container z-red">
+                <h2><i class="fas fa-bed z-margin-right"></i>Zack Hotel Online Booking</h2>
+            </div>
+            <div class="z-container z-white z-padding-16">
+                <form action="#" target="_blank">
+                    <div class="z-row-padding" style="margin:0 -16px;">
+                        <div class="z-half z-margin-bottom">
+                            <label><i class="far fa-calendar-check"></i> Check In</label>
+                            <input class="z-input z-border" type="text" placeholder="DD MM YYYY" name="CheckIn"
+                                required>
+                        </div>
+                        <div class="z-half">
+                            <label><i class="far fa-calendar-check"></i> Check Out</label>
+                            <input class="z-input z-border" type="text" placeholder="DD MM YYYY" name="CheckOut"
+                                required>
+                        </div>
+                    </div>
+                    <div class="z-row-padding" style="margin:8px -16px;">
+                        <div class="z-half z-margin-bottom">
+                            <label><i class="fas fa-male"></i> Adults</label>
+                            <input class="z-input z-border" type="number" value="1" name="Adults" min="1" max="6">
+                        </div>
+                        <div class="z-half">
+                            <label><i class="fas fa-child"></i> Kids</label>
+                            <input class="z-input z-border" type="number" value="0" name="Kids" min="0" max="6">
+                        </div>
+                    </div>
+                    <button class="z-button z-dark-grey" type="submit"><i class="fa fa-search z-margin-right"></i>
+                        Search availability</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Rooms -->
+    <div class="z-content" style="max-width:1532px;">
+
+        <div class="z-container z-margin-top" id="rooms">
+            <h3>Rooms</h3>
+            <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.
+            </p>
+        </div>
+
+        <div class="z-row-padding">
+            <div class="z-col m3">
+                <label><i class="far fa-calendar"></i> Check In</label>
+                <input class="z-input z-border" type="text" placeholder="DD MM YYYY">
+            </div>
+
+            <div class="z-col m3">
+                <label><i class="far fa-calendar"></i> Check Out</label>
+                <input class="z-input z-border" type="text" placeholder="DD MM YYYY">
+            </div>
+
+            <div class="z-col m2">
+                <label><i class="fa fa-male"></i> Adults</label>
+                <input class="z-input z-border" type="number" placeholder="1">
+            </div>
+
+            <div class="z-col m2">
+                <label><i class="fa fa-child"></i> Kids</label>
+                <input class="z-input z-border" type="number" placeholder="0">
+            </div>
+
+            <div class="z-col m2">
+                <label><i class="fa fa-search"></i> Search</label>
+                <button class="z-button z-block z-black">Search</button>
+            </div>
+
+        </div>
+
+        <div class="z-row-padding z-padding-16">
+            <div class="z-third z-margin-bottom">
+                <img class="rooms" src="image/room_single.jpg" alt="Norway" style="width:100%">
+                <div class="z-container z-white">
+                    <h3>Single Room</h3>
+                    <h6 class="z-opacity">From $99</h6>
+                    <p>Single bed</p>
+                    <p>15m<sup>2</sup></p>
+                    <p class="z-large"><i class="fa fa-bath"></i> <i class="fas fa-phone-alt"></i> <i
+                            class="fa fa-wifi"></i>
+                    </p>
+                    <button class="z-button z-block z-black z-margin-bottom">Choose Room</button>
+                </div>
+            </div>
+
+            <div class="z-third z-margin-bottom">
+                <img class="rooms" src="image/room_double.jpg" alt="Norway" style="width:100%">
+                <div class="z-container z-white">
+                    <h3>Double Room</h3>
+                    <h6 class="z-opacity">From $149</h6>
+                    <p>Queen-size bed</p>
+                    <p>25m<sup>2</sup></p>
+                    <p class="z-large"><i class="fa fa-bath"></i> <i class="fas fa-phone-alt"></i> <i
+                            class="fa fa-wifi"></i>
+                        <i class="fa fa-tv"></i>
+                    </p>
+                    <button class="z-button z-block z-black z-margin-bottom">Choose Room</button>
+                </div>
+            </div>
+
+            <div class="z-third z-margin-bottom">
+                <img class="rooms" src="image/room_deluxe.jpg" alt="Norway" style="width:100%">
+                <div class="z-container z-white">
+                    <h3>Deluxe Room</h3>
+                    <h6 class="z-opacity">From $199</h6>
+                    <p>King-size bed</p>
+                    <p>40m<sup>2</sup></p>
+                    <p class="z-large"><i class="fa fa-bath"></i> <i class="fas fa-phone-alt"></i> <i
+                            class="fa fa-wifi"></i>
+                        <i class="fa fa-tv"></i> <i class="fas fa-glass-martini-alt"></i> <i
+                            class="fas fa-utensils"></i>
+                    </p>
+                    <button class="z-button z-block z-black z-margin-bottom">Choose Room</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="z-row-padding" id="about">
+            <div class="z-col l4 12">
+
+                <h3>About</h3>
+
+                <h6>Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam.</h6>
+
+                <p>We accept : <i class="fas fa-credit-card z-large"></i> <i class="fab fa-cc-mastercard z-large"></i>
+                    <i class="fab fa-cc-apple-pay z-large"></i> <i class="fab fa-cc-visa z-large"></i> <i
+                        class="fab fa-cc-paypal z-large"></i>
+                </p>
+            </div>
+
+            <!-- Image of location/map -->
+
+            <div class="z-col l8 12">
+                <img src="image/map.jpg" class="z-image z-greyscale" style="width:100%;">
+            </div>
+        </div>
+
+        <div class="z-row-padding z-large z-center" style="margin:32px 0">
+            <div class="z-third"><i class="fas fa-map-marker-alt z-text-red"></i> 47, Zeel Street, Goa, India</div>
+            <div class="z-third"><i class="fas fa-phone-alt z-text-red"></i> Phone: +91 9081256718</div>
+            <div class="z-third"><i class="fa fa-envelope z-text-red"></i> Email: zack07@gmail.com</div>
+        </div>
+
+        <div class="z-panel z-red z-leftbar z-padding-32">
+            <h6><i class="fa fa-info z-deep-orange z-padding z-margin-right"></i> On demand, we can offer playstation,
+                babycall, children care, dog equipment, etc.</h6>
+        </div>
+
+        <!-- Hotel -->
+        <div class="z-container">
+            <h3>Our Hotels</h3>
+            <h6>You can find our hotels anywhere in the world:</h6>
+        </div>
+
+        <div class="z-row-padding z-padding-16 z-text-white z-large">
+            <div class="z-half z-margin-bottom">
+                <div class="z-display-container">
+                    <img src="image/cinqueterre.jpg" alt="Cinque Terre" style="width:100%">
+                    <span class="z-display-bottomleft z-padding z-layer">
+                        <h3>Cinque Terre</h3>
+                    </span>
+                </div>
+            </div>
+            <div class="z-half">
+                <div class="z-row-padding" style="margin:0 -16px">
+                    <div class="z-half z-margin-bottom">
+                        <div class="z-display-container">
+                            <img src="image/newyork2.jpg" alt="New York" style="width:100%">
+                            <span class="z-display-bottomleft z-padding z-layer">
+                                <h3>New York</h3>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="z-half z-margin-bottom">
+                        <div class="z-display-container">
+                            <img src="image/sanfran.jpg" alt="San Francisco" style="width:100%">
+                            <span class="z-display-bottomleft z-padding z-layer">
+                                <h3>San Francisco</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="z-row-padding" style="margin:0 -16px">
+                    <div class="z-half z-margin-bottom">
+                        <div class="z-display-container">
+                            <img src="image/pisa.jpg" alt="Pisa" style="width:100%">
+                            <span class="z-display-bottomleft z-padding z-layer">
+                                <h3>Pisa</h3>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="z-half z-margin-bottom">
+                        <div class="z-display-container">
+                            <img src="image/paris.jpg" alt="Paris" style="width:100%">
+                            <span class="z-display-bottomleft z-padding z-layer">
+                                <h3>Paris</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subscribe -->
+        <div class="z-container z-padding-32 z-black z-opacity z-card z-hover-opacity-off" style="margin:32px 0;">
+            <h2>Get the best offers first!</h2>
+            <p>Join our newsletter.</p>
+            <label>E-mail</label>
+            <input class="z-input z-border" type="text" placeholder="Your Email address">
+            <button type="button" class="z-button z-red z-margin-top">Subscribe</button>
+        </div>
+
+        <!-- Contact -->
+        <div class="z-container" id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions, do not hesitate to ask them.</p>
+            <i class="fas fa-map-marker-alt z-text-red" style="width:30px"></i> 47, Zeel Street, Goa, India<br>
+            <i class="fas fa-phone-alt z-text-red" style="width:30px"></i> Phone: +91 9081256718<br>
+            <i class="fa fa-envelope z-text-red" style="width:30px"> </i> Email: zack07@gmail.com<br>
+            <form action="#" target="_blank">
+                <p><input class="z-input z-padding-16 z-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="z-input z-padding-16 z-border" type="text" placeholder="Email" required name="Email">
+                </p>
+                <p><input class="z-input z-padding-16 z-border" type="text" placeholder="Message" required
+                        name="Message"></p>
+                <p><button class="z-button z-black z-padding-large" type="submit">SEND MESSAGE</button></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="z-padding-32 z-black z-center z-margin-top">
+        <h5>Find Us On</h5>
+        <div class="z-xlarge z-padding-16">
+            <i class="fab fa-facebook z-hover-opacity"></i>
+            <i class="fab fa-instagram z-hover-opacity"></i>
+            <i class="fab fa-snapchat z-hover-opacity"></i>
+            <i class="fab fa-pinterest-p z-hover-opacity"></i>
+            <i class="fab fa-twitter z-hover-opacity"></i>
+            <i class="fab fa-linkedin-in z-hover-opacity"></i>
+        </div>
+
+        <p>Made with <i class="far fa-heart"></i> by <a href="zack01.com" target="_blank"
+                class="z-hover-text-green">Zack</a></p>
+
+    </footer>
+
+
+</body>
+
+</html>
